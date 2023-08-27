@@ -31,7 +31,7 @@ function playGame(playerMove) {
         } else if (computerMove === 'paper') {
             res = 'Tie.'; 
         } else if (computerMove === 'scissors') {
-            res = 'You loose.';
+            res = 'You lose.';
         }
     }
 
@@ -48,7 +48,7 @@ function playGame(playerMove) {
     if (res === 'You win.') {
         score.wins += 1;
     } else if (res === 'You lose.') {
-        score.looses += 1;
+        score.loses += 1;
     } else if (res === 'Tie.') {
         score.ties += 1;
     }
